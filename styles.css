@@ -1,0 +1,642 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+.body{
+    color:white;
+    background-color:#000;
+
+    font-family: sans-serif;
+}
+
+section{
+    height: 100vh;
+}
+
+.deco{
+    width: 100%;
+    height: 100%;
+
+    .deco1{
+        display: flex;
+        position: absolute;
+
+        .cir1{
+            display: flex;
+            position: relative;
+            top: 0;
+            left: -40px;
+        }
+    }
+    .deco2{
+        display: flex;
+        position: absolute;
+        
+        left: -40px;
+        .cir2{
+            display: flex;
+            position: relative;
+            top: 0;
+            left: -40px;
+        }
+    }
+    
+
+    .deco3{
+        display: flex;
+        position: absolute;
+
+        width:100%;
+        justify-content: end;
+
+        .cir3{
+            display: flex;
+            position: relative;
+            top: 0;
+            left: 40px;
+        }
+    }
+    .deco4{
+        display: flex;
+        position:absolute;
+
+        width:100%;
+        justify-content: end;
+
+        .cir4{
+            display: flex;
+            position: relative;
+            top: 0;
+            left: 40px;
+        }
+    }
+
+    .deco5{
+        display: flex;
+        position: absolute;
+    }
+    .deco6{
+        display: flex;
+        position: absolute;
+    }
+}
+
+.bio-sect{
+    background-color:#6E2C7E;
+
+    /* decoration */
+    .deco{
+        .deco1{
+            top: 40rem;
+            left: 0;
+
+            z-index: 1;
+        }
+        .deco2{
+            top: 45rem;
+    
+            z-index: 0;
+        }
+
+        .deco3{
+            top: 6rem;
+            left: 0;
+
+            z-index: 1;
+        }
+        .deco4{         
+            top: 11rem;
+            left: 0px;
+
+            z-index: 0;
+        }
+    }
+
+    /* navbar */
+    .navbar{
+        display: flex;
+        flex-direction: row;
+        position: sticky;
+
+        height: 5rem;
+
+        padding-left: 1rem;
+
+        justify-content: space-between;
+        align-items: center;
+
+        background-color: #0B0B0B;
+
+        img{
+            width: 3.4rem;
+            height: 3.4rem;
+        }
+
+        .navbar-btn{
+            margin-right: 1rem;
+        }
+        
+        .navbar-btn > a{
+            color:#fff;
+
+            font-size: 1.25em;
+            font-style:normal;
+            font-weight: 400;
+            
+            text-decoration: none;
+            
+            margin-right: 1.88rem;
+        }
+    }
+
+    /* bio container */
+    .bio{
+        display:flex;
+        position: relative;
+        flex-direction: row;
+
+        margin:8.12rem auto;
+        width: 55%;
+
+        border-bottom: 2px solid #6E2C7E;
+        background-color: #101010;
+
+        padding: 45px 40px;
+
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        
+        img{
+            display:block;
+            
+            max-width: 14rem;
+            
+            height: fit-content;
+            border-radius: 50% 50%;
+
+            justify-content: center;
+        }
+
+        .bio-container{
+            margin-left: 4rem;
+            margin-top: 2rem;
+        
+            width: 34em;
+            max-width: fit-content;
+            
+            /* TEXTO */
+            .bio-content{
+                background-color: transparent;
+
+                .saludo{
+                color:#818181;
+                font-weight: 600;
+                }
+        
+                .bio-text{
+                    margin-top:5px;
+                    color: #fff;
+                    font-style:normal;
+                    font-weight: 500;
+
+                    max-width: 55ch;
+
+                }
+            }
+        
+            /* Bio Footer */
+            .bio-footer{
+                display: grid;
+                grid-template-columns: repeat(2,1fr);
+        
+                margin-top: 2rem;
+        
+                gap: 1.8rem;
+
+                .btn-container{
+                    display: flex;
+                    position: relative;
+
+                    justify-content: space-between;
+
+                    align-items: center;
+
+                    width: 16rem;
+
+                    .btn{
+                        display: flex;
+                        position: relative;
+                        
+                        padding: 0.8rem 1.1rem;
+                
+                        text-decoration: none;
+                        text-align: center;
+        
+                        border-radius:2px 2px;
+                    }
+
+                    .bio-contact{
+                        background-color: #7D3B8D;
+                        color:#fff;
+                    }
+                
+                    .bio-prj{
+                        background-color: #181818;
+                        color:#6C6C6C;
+                    }
+                }
+                
+                .icons-container{
+                display:flex;
+                position:relative;
+                flex-direction: row;
+        
+                justify-content: start;
+                align-items: end;
+
+                max-width: max-content;
+        
+                    /* ICONOS */
+                    .icon{
+                        display:flex;
+                        position: relative;
+            
+                        color:red;
+                        text-decoration: none;
+            
+                        width: 3rem;
+            
+                        margin-right: 1rem;
+
+                        svg{
+                            background-color: transparent;
+                        }
+                    }
+                }
+            }
+        }
+        
+    }
+    
+    /* logos-container */
+    .logos-container{
+        display: flex;
+        position: relative;
+
+        margin:0 auto;
+        width: 50%;
+
+        .logo{
+            background-color:#111111;
+            border-radius: 15px;
+            margin:0 auto;
+        }
+    }
+
+}
+
+.prj-sect{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    background: #7D3B8D;  
+
+    .prj-tittle{
+        color: white;
+
+        background-color: #101010;
+        border-bottom: 2px solid #6E2C7E;
+
+        width: 45%;
+
+        margin:0 auto;
+        margin-top: 3rem;
+        padding: 1rem;
+        
+        text-align: center;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    }
+
+    .card-container{
+        display:flex;
+        flex-direction: row;
+
+        justify-content: space-around;
+        
+        margin:0 auto;
+        margin-top: 3em;
+
+        width: 80%;
+        
+        background-color: #131313;
+        padding: 1.2em;
+
+        border-radius: 15px 15px;
+
+        .card{
+            display: flex;
+            flex-direction: column;
+
+            background-color: #0B0B0B;
+            width: 22%;
+            padding: 10px;
+
+            border-radius: 10px 10px;
+
+            img{
+                display: flex;
+                position: relative;
+                margin:0 auto;
+
+                background-color: blue;
+
+                width: 100%;
+                max-height: 10rem;
+
+                image-rendering:optimizeQuality;
+                object-fit:cover;
+            }
+
+            .card-text{
+                display: flex;
+                flex-direction: column;
+
+                margin-top: 15px;
+                font-size: 20px;
+                
+                padding-top: 20px;
+                height: 100%;
+
+                p{
+                    font-size: 16px;
+
+                    margin-top: 3px;
+
+                    color: #818181;
+
+                    max-width: 35ch;
+
+                }
+                i{
+                    font-size: 15px;
+                    opacity: .7;
+
+                    margin-top: 5px;
+                    color: #818181;
+                }
+
+                span{
+                    color: #e680ff;
+                }
+
+            }
+            a{
+                display: flex;
+                position: relative;
+                
+                margin-top: 1em;
+
+                padding: 8px;
+
+                font-size: 16px;
+                font-weight: 400;
+
+                color: white;
+                text-decoration: none;
+                
+                justify-content: center;
+                
+                width: 8rem;
+
+                background-color: #7D3B8D ;
+            }
+
+        }
+    }
+}
+
+.aboutme-sect{
+    background: #090909;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    
+    /* decoration*/
+    .deco{
+        .deco1{
+            width: 100%;
+            top: 25rem;
+            left: 0px;
+
+            z-index: 1;
+        }
+        .deco2{
+            top: 30rem;
+            z-index: 0;
+        }
+
+        .deco3{
+            top: 0rem;
+            z-index: 1;
+        }
+        .deco4{
+            top: 5rem;
+            z-index: 0;
+        }
+
+        .deco5{
+            width: 100%;
+
+            top: 0rem;
+            left: 0rem;
+
+            justify-content: center;
+        }
+        .deco6{
+            left: -5%;
+            bottom: 60px;
+
+            min-width: 100%;
+            max-width: 100%;
+
+            justify-content: end;
+        }
+    }
+    
+    /* skills-container*/
+    .skills-container{
+        display: flex;
+        flex-direction: column;
+
+        justify-content: space-evenly;
+
+        margin-top: 15%;
+
+        z-index: 2;
+        
+        height: 70%;
+        max-width: 100%;
+
+        padding-left: 8em;
+
+        .skill{
+            display: flex;
+            position: relative;
+
+            justify-content: center;
+            margin:0 auto;
+        }
+
+        .skill-txt-cont{
+            padding: 40px;
+            padding-left:40px;
+
+            width: 70%;
+
+            justify-content: start;
+            
+            background: #701f85;
+
+            border-radius: 10px 10px;
+
+            h2{
+                color: rgb(230, 128, 255,1);
+                
+                width: max-content;
+
+                font-size:22px;
+                
+                margin-top: 0px;
+                
+            }
+
+            p{
+                max-width: 60ch;
+
+                margin-top: 10px;
+                
+                padding-bottom: 20px;
+
+                font-size:18px;
+                
+            }
+        }
+    }
+
+    /* aboutme-container*/
+    .aboutme-container{
+        display:flex;
+        flex-direction: column;
+
+        margin-top: 20%;
+        margin-left: 15%;
+
+        height: max-content;
+        max-width: 60%;
+        
+        z-index: 2;
+
+        p{
+            margin:0 auto;
+
+            font-size:20px;
+
+            padding-bottom: 8px;
+            max-width: 35ch;
+
+            text-align: start;
+
+            .resaltado{
+                color: #e680ff;
+            }
+        }
+        
+        img{
+            width: 50%;
+            margin:0 auto;
+            margin-top: 4em;
+        }
+    }
+}
+
+#contact{
+    background: #6E2C7E;
+    box-shadow: 0px 7px 7px 0px rgba(0, 0, 0, 0.25) inset;
+
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+
+    .contact-datos{
+        display: flex;
+        position: relative;
+        flex-direction: column;
+
+        justify-content: center;
+        align-items: center;
+
+        gap: 20px;
+
+        p{
+            font-size: 17px;
+
+            max-width: 30ch;
+        }
+    }
+
+    .contact-container{
+        display:flex;
+        position:relative;
+        flex-direction: column;
+
+        justify-content: center;
+        align-items: center;
+
+        p{
+            font-size: 20px;
+            margin-bottom: 20px;
+
+            background-color: rgb(17, 17, 17,.4);
+
+            padding: 8px;
+
+            border-radius:3px 3px;
+            box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.25) ;
+        }
+
+        .logos{
+            display: flex;
+            flex-direction: row;
+
+            width: 15rem;
+
+            justify-content: center;
+
+            gap: 40px;
+
+            svg{
+                background-color: #111111;
+                padding: 7px;
+
+                border-radius: 10px 10px;
+            }
+            
+        }
+    }
+
+    .contact-logo{
+        display: flex;
+        position: relative;
+        flex-direction: row;
+
+        justify-content: center;
+        align-items: center;
+
+        padding: 20px;
+
+        img{
+            max-width: 6rem;
+            height: fit-content;
+        }
+    }
+}
