@@ -17,66 +17,65 @@ Un ordenador portátil o desktop de alta resolución: 1920 x 1080
 
 /* Smartphone*/
 @media screen and (max-width: 767px){
-    section{
-        height: 120vw;
+
+     .navbar{
+
+        height: 7em;
+        .navbar-btn{
+            background-color: blue;
+        }
+
+        .navbar-btn{
+            display:none;
+
+        }
+
+        img{
+            margin-left: 1em;
+            width: 5em;
+            height: max-content;
+        }
+
+        #navbar-menu{
+            display:flex;
+            position:relative;
+
+            font-size: 50px;
+
+            margin-right: 5%;
+
+            width: 4rem;
+            height: 4rem;
+
+            justify-content: center;
+            align-items: center;
+            
+            border:transparent;
+        }
     }
 
     .bio-sect{
+
         /* Bio decos*/
         .deco{
             /* Izquierda*/
             .deco1{
+                top:37rem;
                 left: -60px;
             }
             .deco2{
+                top:42rem;
                 left: -95px;
             }
 
             /* Derecha*/
             .deco3{
-                top:8em;
+                top:0;
                 left: 50px;
             }
             .deco4{
-                top:12.5rem;
+                top:5em;
                 left: 45px;
-            }
-        }
-
-        /*Nav bar*/
-        .navbar{
-
-            height: 7em;
-            .navbar-btn{
-                background-color: blue;
-            }
-
-            .navbar-btn{
-                display:none;
-
-            }
-
-            img{
-                margin-left: 1em;
-                width: 5em;
-                height: max-content;
-            }
-
-            #navbar-menu{
-                display:flex;
-                position:relative;
-
-                font-size: 50px;
-
-                margin-right: 5%;
-
-                width: 4rem;
-                height: 4rem;
-
-                justify-content: center;
-                align-items: center;
-                
-                border:transparent;
             }
         }
 
@@ -88,7 +87,7 @@ Un ordenador portátil o desktop de alta resolución: 1920 x 1080
             
             padding: 30px;
             
-            z-index:2;  
+            z-index:1;  
 
             margin:6rem auto;
             margin-bottom: 3rem;
@@ -99,7 +98,8 @@ Un ordenador portátil o desktop de alta resolución: 1920 x 1080
 
             .bio-container{
                 margin-left: 20px;
-                
+
+                max-width: 90%;
             }
         }
     }
@@ -119,7 +119,7 @@ Un ordenador portátil o desktop de alta resolución: 1920 x 1080
             flex-direction: column;
             gap: 20px;
 
-            width: 75%;
+            width: 95%;
 
             padding: 40px 0;
 
@@ -163,8 +163,72 @@ Un ordenador portátil o desktop de alta resolución: 1920 x 1080
     }
 
     .aboutme-sect{
+        display: flex;
+        position: relative;
+        flex-direction: column;
+
+        .deco{
+            display:none;
+        }
+
+        .skills-container{
+            padding: 0;
+
+            width: 100%;
+
+            padding: 2em 0;
+
+            gap:20px;
+
+            .skill{
+                max-width: 95%;
+            }
+        }
+
+        .aboutme-container{
+            margin:0;
+            
+            padding: 2em;
+
+            max-width: 100%;
+
+            p{
+                width: 80%;
+            }
+
+            img{
+                width: 10em;
+            }
+        }
     }
 
     #contact{
+        grid-template-rows: repeat(2,1fr);
+        grid-template-columns: repeat(2,1fr);
+
+        .contact-datos{
+            grid-column: 0/1;
+            grid-row: 1/2;
+
+            p{
+                max-width: 80%;
+                text-align: center;
+            }
+        }
+
+        .contact-container{
+            grid-column: 0/-1;
+            grid-row:2/-1
+        }
+
+        .contact-logo{
+            grid-row: 1/-1;
+
+            img{
+                width: 8rem;
+
+                padding: 10px;
+            }
+        }
     }
 }

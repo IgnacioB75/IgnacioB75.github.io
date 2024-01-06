@@ -10,8 +10,14 @@
     font-family: sans-serif;
 }
 
-section{
-    height: 120vh;
+section{   
+    position: relative; 
+
+    height: 100vh;
+
+    padding: 5rem 0;
+    
+    overflow-x: hidden;
 }
 
 .deco{
@@ -82,79 +88,85 @@ section{
     }
 }
 
+.navbar{
+    display: flex;
+    flex-direction: row;
+    position: sticky;
+
+    height: 6rem;
+
+    padding-left: 1rem;
+
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: #0B0B0B;
+
+    img{
+        width: 3.4rem;
+        height: 3.4rem;
+    }
+
+    .navbar-btn{
+        margin-right: 1rem;
+    }
+    
+    .navbar-btn > a{
+        color:#fff;
+
+        font-size: 1.25em;
+        font-style:normal;
+        font-weight: 400;
+        
+        text-decoration: none;
+        
+        margin-right: 1.88rem;
+    }
+
+    #navbar-menu{
+        display:none;
+    }
+}
+
 .bio-sect{
     background-color:#6E2C7E;
+
+    height: max-content;
+    
+    overflow-y: hidden;
 
     /* decoration */
     .deco{
         overflow-x: hidden;
+        overflow-y:hidden;
 
         .deco1{
-            top: 40rem;
+            top: 30rem;
             left: 0;
 
             z-index: 1;
         }
         .deco2{
-            top: 45rem;
+            top: 35rem;
     
             z-index: 0;
         }
 
         .deco3{
-            top: 6rem;
+            top: 1rem;
             left: 0;
 
             z-index: 1;
         }
         .deco4{         
-            top: 11rem;
+            top: 6em;
             left: 0px;
 
             z-index: 0;
         }
     }
 
-    /* navbar */
-    .navbar{
-        display: flex;
-        flex-direction: row;
-        position: sticky;
-
-        height: 5rem;
-
-        padding-left: 1rem;
-
-        justify-content: space-between;
-        align-items: center;
-
-        background-color: #0B0B0B;
-
-        img{
-            width: 3.4rem;
-            height: 3.4rem;
-        }
-
-        .navbar-btn{
-            margin-right: 1rem;
-        }
-        
-        .navbar-btn > a{
-            color:#fff;
-
-            font-size: 1.25em;
-            font-style:normal;
-            font-weight: 400;
-            
-            text-decoration: none;
-            
-            margin-right: 1.88rem;
-        }
-
-        #navbar-menu{
-            display:none;
-        }
-    }
+    
 
     /* bio container */
     .bio{
@@ -429,6 +441,8 @@ section{
 
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+
+    height: max-content;
     
     /* decoration*/
     .deco{
@@ -643,7 +657,7 @@ section{
         padding: 20px;
 
         img{
-            max-width: 6rem;
+            width: 6rem;
             height: fit-content;
         }
     }
