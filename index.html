@@ -2,6 +2,11 @@
 <html lang="es">
 
 <head>
+    <!-- Onest Font 300-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Onest:wght@300;400&display=swap" rel="stylesheet">
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -15,15 +20,20 @@
 </head>
 
 <body class="body">
-
-    <nav class="navbar">
+    
+    <nav class="nav-bar">
         <img src="./img/°U°.png">
-        <div class="navbar-btn">
-            <a href="#aboutme">Sobre mí</a>
-            <a href="#prj">Proyectos</a>
-            <a href="#contact">Contacto</a>
-        </div>
-        <button id="navbar-menu"><i class="fa-solid fa-bars"></i style="display:none;"></button>
+
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fa-solid fa-bars menu-icon"></i style="display:none;">
+        </label>
+        
+        <ul class="nav-btn">
+            <li><a href="#prj">Proyectos</a></li>
+            <li><a href="#aboutme">Sobre mí</a></li>
+            <li><a href="#contact">Contacto</a></li>
+        </ul>
     </nav>
 
     <section class="bio-sect" >
@@ -188,7 +198,7 @@
     </section>
 
     <section id="aboutme" class="aboutme-sect"  >
-        
+
         <div class="deco" style="position:absolute;">
             <!-- FORMAS BIO IZQUIERDA -->
             <div class="deco1">

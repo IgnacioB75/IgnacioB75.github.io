@@ -18,39 +18,22 @@ Un ordenador portátil o desktop de alta resolución: 1920 x 1080
 /* Smartphone*/
 @media screen and (max-width: 767px){
 
-     .navbar{
-
-        height: 7em;
-        .navbar-btn{
-            background-color: blue;
+    .nav-bar{
+        
+        .nav-btn{
+            display: none;
+        }
+        
+        .checkbtn{
+            display: block;
         }
 
-        .navbar-btn{
-            display:none;
+        .menu-icon{
+            display: block;
+            position: fixed;
 
-        }
-
-        img{
-            margin-left: 1em;
-            width: 5em;
-            height: max-content;
-        }
-
-        #navbar-menu{
-            display:flex;
-            position:relative;
-
-            font-size: 50px;
-
-            margin-right: 5%;
-
-            width: 4rem;
-            height: 4rem;
-
-            justify-content: center;
-            align-items: center;
-            
-            border:transparent;
+            top: 20px;
+            right: 20px;
         }
     }
 

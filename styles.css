@@ -7,7 +7,7 @@
     color:white;
     background-color:#000;
 
-    font-family: sans-serif;
+    font-family: 'Onest', sans-serif;
 }
 
 section{   
@@ -15,7 +15,7 @@ section{
 
     height: 100vh;
 
-    padding: 5rem 0;
+    padding: 10rem 0;
     
     overflow-x: hidden;
 }
@@ -88,51 +88,69 @@ section{
     }
 }
 
-.navbar{
-    display: flex;
+.nav-bar{
+    display:flex;
     flex-direction: row;
-    position: sticky;
+    position: fixed;
 
+    width: 100%;
     height: 6rem;
 
-    padding-left: 1rem;
+    z-index: 5;
+
+    background-color: rgb(9, 9, 9,0.9);
 
     justify-content: space-between;
     align-items: center;
-
-    background-color: #0B0B0B;
-
-    img{
-        width: 3.4rem;
-        height: 3.4rem;
-    }
-
-    .navbar-btn{
-        margin-right: 1rem;
-    }
     
-    .navbar-btn > a{
-        color:#fff;
+    padding: .5em;
 
-        font-size: 1.25em;
-        font-style:normal;
-        font-weight: 400;
-        
-        text-decoration: none;
-        
-        margin-right: 1.88rem;
+    
+    img{
+        margin-left: 1rem;
+        width: 5rem;
+        height: max-content;
     }
 
-    #navbar-menu{
+    .menu-icon, #check{
         display:none;
     }
+
+    .menu-icon{
+        width: 50px;
+        height: 50px;
+        background-color: blue;
+        font-size: 40px;
+        text-align: center;
+    }
+
+    .nav-btn{
+        display: flex;
+        flex-direction: row;
+
+        margin-right: .5rem;
+
+        list-style: none;
+        
+        li > a{
+            color: #fff;
+            font-size: 1.25em;
+            margin-right: 1.6rem;
+            text-decoration: none;
+        }
+    }
+
+
 }
 
 .bio-sect{
     background-color:#6E2C7E;
 
     height: max-content;
-    
+
+    padding-top: 8rem;
+
+    padding-bottom: 10em;
     overflow-y: hidden;
 
     /* decoration */
@@ -320,6 +338,7 @@ section{
 
     background: #7D3B8D;  
 
+    padding: 0;
     .prj-tittle{
         color: white;
 
@@ -476,7 +495,7 @@ section{
             justify-content: center;
         }
         .deco6{
-            left: -10%;
+            left: -5%;
             bottom: 60px;
 
             min-width: 100%;
@@ -490,22 +509,20 @@ section{
     .skills-container{
         display: flex;
         flex-direction: column;
-
-        align-self: center;
-        justify-content: space-evenly;
+        position: relative;
 
         z-index: 2;
-        
-        max-width: 100%;
-        height: 85%;
 
-        padding-left: 8rem;
+        width: 100%;
+        height: max-content;
+
+        gap: 20px;
+        
+        margin-left: 4em;
 
         .skill{
             display: flex;
             position: relative;
-
-            justify-content: center;
 
             margin:0 auto;
 
@@ -588,6 +605,8 @@ section{
 
     display: grid;
     grid-template-columns: repeat(3,1fr);
+
+    height: 12em;
 
     .contact-datos{
         display: flex;
