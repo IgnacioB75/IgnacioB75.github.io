@@ -98,7 +98,9 @@ section{
 
     z-index: 5;
 
-    background-color: rgb(9, 9, 9,0.9);
+    background-color: rgb(9, 9, 9);
+
+    border-bottom: 2px solid #a63dc0;
 
     justify-content: space-between;
     align-items: center;
@@ -117,18 +119,14 @@ section{
     }
 
     .menu-icon{
-        width: 50px;
-        height: 50px;
-        background-color: blue;
-        font-size: 40px;
-        text-align: center;
+        font-size: 50px;
+        
+        padding: 0 5px;
     }
 
     .nav-btn{
         display: flex;
         flex-direction: row;
-
-        margin-right: .5rem;
 
         list-style: none;
         
@@ -150,7 +148,7 @@ section{
 
     padding-top: 8rem;
 
-    padding-bottom: 10em;
+    padding-bottom: 11em;
     overflow-y: hidden;
 
     /* decoration */
@@ -183,8 +181,6 @@ section{
             z-index: 0;
         }
     }
-
-    
 
     /* bio container */
     .bio{
@@ -243,7 +239,7 @@ section{
             /* Bio Footer */
             .bio-footer{
                 display: grid;
-                grid-template-columns: repeat(2,1fr);
+                grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
         
                 margin-top: 2rem;
         
@@ -254,7 +250,6 @@ section{
                     position: relative;
 
                     justify-content: space-between;
-
                     align-items: center;
 
                     width: 16rem;
@@ -465,6 +460,7 @@ section{
     
     /* decoration*/
     .deco{
+        /* Formas izquierda*/
         .deco1{
             width: 100%;
             top: 25rem;
@@ -477,6 +473,7 @@ section{
             z-index: 0;
         }
 
+        /* Formas derecha*/
         .deco3{
             top: 0rem;
             z-index: 1;
@@ -486,6 +483,7 @@ section{
             z-index: 0;
         }
 
+        /* Elipse arriba*/
         .deco5{
             width: 100%;
 
@@ -493,9 +491,12 @@ section{
             left: 0rem;
 
             justify-content: center;
+            transform: scale(150%);
         }
+
+        /* Elipse abajo*/
         .deco6{
-            left: -5%;
+            left: -10%;
             bottom: 60px;
 
             min-width: 100%;
@@ -519,6 +520,7 @@ section{
         gap: 20px;
         
         margin-left: 4em;
+        margin-top: 15%;
 
         .skill{
             display: flex;
