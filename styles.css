@@ -615,15 +615,18 @@ section{
         position: relative;
         flex-direction: column;
 
-        justify-content: center;
-        align-items: center;
+        margin:0 auto;
+
+        margin-top: 20px;
+
+        text-align: start;
 
         gap: 20px;
 
+        max-width: 30ch;
+
         p{
             font-size: 17px;
-
-            max-width: 30ch;
         }
     }
 
