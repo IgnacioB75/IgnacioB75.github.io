@@ -154,7 +154,7 @@ Un ordenador portátil o desktop de alta resolución: 1920 x 1080
 
             .card{
                 width: 85%;
-                height: 60vh;
+                height: max-content;
 
                 margin:0 auto;
 
